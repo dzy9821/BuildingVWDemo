@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="BuildingVWDemo:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/BuildingVWDemo_jar</output-path>
+    <root id="archive" name="BuildingVWDemo.jar">
+      <element id="module-output" name="BuildingVWDemo" />
+    </root>
+  </artifact>
+</component>

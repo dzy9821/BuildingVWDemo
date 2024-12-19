@@ -1,0 +1,56 @@
+- entry_type: "violation_sequence"
+  metadata:
+    format_version: "2.0"
+    uuid: "20fce88b-46b6-4a5d-9067-58b6d146a442"
+    creation_time: "2018-11-13T14:17:34Z"
+    producer:
+      name: "AFL"
+      version: "2.47b"
+      configuration: "default"
+    task:
+      input_files:
+      - "./digits_for_true-unreach-call.c"
+      input_file_hashes:
+        "./digits_for_true-unreach-call.c": "0d93369471f79183838a001351243efc1625251c997b444946be53bbcb6b6dec"
+      specification: "CHECK( LTL(G ! call(__VERIFIER_error())) )"
+      data_model: "ILP32"
+      language: "C"
+  content:
+  - segment:
+    - waypoint:
+        type: "assumption"
+        action: "follow"
+        constraint:
+          value: "(a == 2U)"
+        location:
+          file_name: "D:\project\BuildingVWDemo\example\example.c"
+          line: 4
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "assumption"
+        action: "follow"
+        constraint:
+          value: "(b == 254U)"
+        location:
+          file_name: "D:\project\BuildingVWDemo\example\example.c"
+          line: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "D:\project\BuildingVWDemo\example\example.c"
+          line: 8
+          function: "main"
+  - segment:
+    - waypoint:
+        type: "target"
+        action: "follow"
+        location:
+          file_name: "D:\project\BuildingVWDemo\example\example.c"
+          line: 9
+          function: "main"
