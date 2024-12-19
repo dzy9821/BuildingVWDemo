@@ -1,5 +1,6 @@
 ## Demo for Building Violation Witnesses from Error-Triggering Test Suites
 This is a demo version of a command-line tool that I created based on my understanding of the topic. Currently, this tool supports only very limited inputs. For example, you can find sample inputs and outputs in the `example` folder.
+Hardcoding is used in many places.
 
 Currently,the tool has been developed and tested in a Windows environment.
 ## The workflow of the program
